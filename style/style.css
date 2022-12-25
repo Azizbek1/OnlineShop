@@ -1,0 +1,292 @@
+@import "./var.css";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+
+/* ========  Header  ========  */
+.header .headerTop {
+    background: #F8F8F8;
+    padding: 20px 0;
+}
+
+/* headerLeft */
+.header .headerLeft {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header .headerLeft .headerDropdown {
+    margin-right: 25px;
+}
+
+.header .headerLeft .headerPhone a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+/* headerLinks */
+.header .headerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .headerLinks ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header .headerLinks ul li {
+    margin: 0 10px;
+}
+
+.header .headerLinks ul li a {
+    color: var(--grey);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+    background: #fd660248;
+    transition: 500ms;
+    border-radius: 6px;
+}
+
+.header .headerLinks ul li a:hover {
+    color: white;
+    background: var(--orange);
+}
+
+
+/* ==========   headerBottom   ==========  */
+.header .headerBottom {
+    position: relative;
+    height: 600px;
+}
+
+.header .headerBottom .headerBottomNav {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar */
+.header .headerBottom .headerBottomNav .navbar {
+    background: black;
+    padding-left: 136px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+}
+
+.header .headerBottom .headerBottomNav .navbar .navbar-toggler .fa-solid {
+    color: white;
+}
+
+.header .headerBottom .navbar-brand span {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header .headerBottom .navbar-nav {
+    margin-left: 100px;
+}
+
+.header .headerBottom .navbar-nav .nav-item .nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.header .headerBottom .navbar-nav .nav-item .nav-link:hover {
+    color: blue;
+}
+
+.header .headerBottom .navbar-collapse {
+    justify-content: space-between;
+}
+
+.header .carousel-item img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* navbar-brand */
+.header .navbar-brand img {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+
+
+
+
+
+/* ====== banner ====== */
+.banner {
+    padding: 60px 0;
+    background: #E3E3E3;
+}
+
+.banner .bannerCategory {
+    width: 100%;
+}
+
+.banner .bannerCategory .topTitle {
+    background: #FBE1C7;
+    padding: 15px 0 15px 10px;
+}
+
+.banner .bannerCategory .topTitle h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--orange);
+    margin: 0;
+}
+
+.banner .categMenu {
+    background: white;
+    box-shadow: 12px 10px 10px 2px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 0 10px;
+}
+
+.banner .categMenu li {
+    margin-bottom: 20px;
+}
+
+.banner .categMenu li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.banner .categMenu li a .fa-solid {
+    color: var(--orange);
+    margin-right: 10px;
+}
+
+
+/* skidgaBanner */
+.banner .skidgaBanner {
+    margin-top: 25px;
+}
+
+.banner .skidgaBanner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner .reklamabanner img {
+    height: 100%;
+    max-width: 100%;
+}
+
+
+
+/* shopsCredit */
+.shopsCredit {
+    padding: 40px 0;
+}
+
+.shopsCredit h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--dartGrey);
+    margin-bottom: 40px;
+}
+
+/* card-body */
+.shopsCredit .card-body {
+    text-align: center;
+}
+
+
+
+
+/* bestProduct */
+.bestProduct{
+    background: #56232C;
+    padding: 40px 0 60px;
+}
+.bestProduct .list-group{
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.bestProduct .list-group .list-group-item{
+    flex-direction: row;
+    margin-bottom: 50px;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 14px;
+    width: auto;
+    margin: 0 15px;
+    font-weight: 600;
+}
+.bestProduct .list-group .list-group-item.active{
+    background: #0D6EFD;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* =======================================  MEDIA   ======================================= */
+/* Media 1200px  x - large*/
+@media (max-width: 1200px) {
+
+}
+/* Media 992px large */
+@media (max-width: 992px) {
+  
+}
+/* Media 768px medium */
+@media (max-width: 768px) {
+    .header .headerLeft{
+        justify-content: center;    
+        margin-bottom: 10px;
+    }
+    .header .headerLinks{
+        justify-content: center;    
+        margin-bottom: 10px;
+    }
+    .bestProduct .list-group{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* Media 576px small */
+@media (max-width: 576px) {
+   
+}
